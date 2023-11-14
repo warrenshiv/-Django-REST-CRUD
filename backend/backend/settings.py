@@ -66,6 +66,12 @@ CORS_ALLOWED_ORIGINS = [
 #     ),
 # }
 
+import os
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+MEDIA_URL = '/media/'
+
 ROOT_URLCONF = 'backend.urls'
 
 TEMPLATES = [
