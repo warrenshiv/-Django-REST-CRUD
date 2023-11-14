@@ -4,4 +4,4 @@ from .models import Item
 class ItemSerializers(serializers.ModelSerializer):
     class Meta:
         model = Item
-        fields = ('id', 'name', 'description')
+        fields = '__all__' # This will serialize all fields in the model
